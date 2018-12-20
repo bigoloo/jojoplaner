@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph"
+            app:startDestination="@id/homeActivityFragment">
+
+  <fragment android:id="@+id/homeActivityFragment"
+            android:name="com.jojo.android.jojoplaner.HomeActivityFragment"
+            android:label="fragment_home" tools:layout="@layout/fragment_home">
+    <action android:id="@+id/action_homeActivityFragment_to_addPlanFragment"
+            app:destination="@id/addPlanFragment" app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"/>
+  </fragment>
+  <fragment android:id="@+id/addPlanFragment"
+            android:name="com.jojo.android.jojoplaner.presentation.screens.AddPlanFragment"
+            android:label="fragment_add_plan" tools:layout="@layout/fragment_add_plan"/>
+</navigation>
